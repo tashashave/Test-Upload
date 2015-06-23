@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+	
+	<title>jQuery Library</title>
+
+	<link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" />
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+	<script src="jquery.lightbox.js" type="text/javascript"></script>
+	<script>
+		$(document).ready(function(){
+		    base_url = document.location.href.substring(0, document.location.href.indexOf('index.html'), 0);
+		    
+			$(".lightbox").lightbox({
+			    fitToScreen: true,
+			    imageClickClose: false
+		    });
+			
+				    
+		});
+
+	</script>
+
+	<style type="text/css">
+	
+	</style>
+
+</head>
+<body>
+
+
+<h1>jQuery Plugin Lightbox</h1>
+<h2>Click the thumbnails</h2>
+<a href="images/willow.JPG" class="lightbox" title="My dog Willow"><img src="images/willow.JPG" height="40" alt="" /></a>
+    
+<a href="images/willow2.JPG" class="lightbox" title="My dog Willow"><img src="images/willow2.JPG" height="40" alt="" /></a>
+
+
+</body>
+</html>
